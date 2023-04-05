@@ -1,0 +1,298 @@
+nav li{
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    background-color: lightblue;
+    padding: 25px 0; 
+    text-align: left;
+  }
+
+/* nav a:active{
+
+} */
+
+/* maybe make the nav dropdown for mobile view- possibly too complicated  */
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.dog_container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.brody1{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 20px;
+    /* object-fit: cover;
+    overflow: hidden; */
+}
+
+.brody2{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+} 
+
+.brody3{
+    grid-column: 2;
+    grid-row: 3;
+    padding: 20px;
+}
+
+.brody_text{
+    grid-column: 1 / -1;
+    grid-row: 4;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.higgins1{
+    grid-column: 2;
+    grid-row: 5;
+    padding: 20px;
+}
+
+.higgins2{
+    grid-column: 2;
+    grid-row: 6;
+    padding: 20px;
+}
+
+.higgins3{
+    grid-column: 2;
+    grid-row: 7;
+    padding: 20px;
+}
+
+.higgins_text{
+    grid-column: 1 / -1;
+    grid-row: 8;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.marlo1{
+    grid-column: 2;
+    grid-row: 9;
+    padding: 20px;
+}
+
+.marlo2{
+    grid-column: 2;
+    grid-row: 10;
+    padding: 20px;
+}
+
+.marlo3{
+    grid-column: 2;
+    grid-row: 11;
+    padding: 20px;
+}
+
+.marlo_text{
+    grid-column: 1 / -1;
+    grid-row: 12;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 700px){
+    .dog_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        align-items: center;
+    }
+    
+    /* do something to nav  */
+
+    .brody_text{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .brody1{
+        grid-column: 1;
+        grid-row: 1;
+        padding: 10px;
+    }
+
+    .brody2{
+        grid-column: 3;
+        grid-row: 1;
+        padding: 10px;
+    } 
+    
+    .brody3{
+        grid-column: 4;
+        grid-row: 1;
+        padding: 10px;
+    }
+
+    .higgins_text{
+        grid-column: 3;
+        grid-row: 2;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .higgins1{
+        grid-column: 1;
+        grid-row: 2;
+        padding: 10px;
+    }
+    
+    .higgins2{
+        grid-column: 2;
+        grid-row: 2;
+        padding: 10px;
+    }
+    
+    .higgins3{
+        grid-column: 4;
+        grid-row: 2;
+        padding: 10px;
+    }
+    .marlo_text{
+        grid-column: 2;
+        grid-row: 3;
+        text-align: center;
+        padding: 10px;
+    }    
+    .marlo1{
+        grid-column: 1;
+        grid-row: 3;
+        padding: 10px;
+    }
+    
+    .marlo2{
+        grid-column: 3;
+        grid-row: 3;
+        padding: 10px;
+    }
+    
+    .marlo3{
+        grid-column: 4;
+        grid-row: 3;
+        padding: 10px;
+    }
+
+    .dog_container div:nth-child(4n){
+        border: solid lightblue 2px;
+    }
+} 
+
+@media screen and (min-width: 900px){
+    .dog_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        align-items: center;
+    }
+    
+    nav{
+        background-color: lightblue;
+        padding: 25px 0; 
+        text-align: right;
+      }
+    
+    /* img{
+        make images same height??
+    } */
+
+    .brody_text{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .brody1{
+        grid-column: 1;
+        grid-row: 2;
+        padding: 10px;
+    }
+
+    .brody2{
+        grid-column: 2;
+        grid-row: 2;
+        padding: 10px;
+    } 
+    
+    .brody3{
+        grid-column: 3;
+        grid-row: 2;
+        padding: 10px;
+    }
+    
+    .higgins_text{
+        grid-column: 1 / -1;
+        grid-row: 3;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .higgins1{
+        grid-column: 1;
+        grid-row: 4;
+        padding: 10px;
+    }
+    
+    .higgins2{
+        grid-column: 2;
+        grid-row: 4;
+        padding: 10px;
+    }
+    
+    .higgins3{
+        grid-column: 3;
+        grid-row: 4;
+        padding: 10px;
+    }
+    .marlo_text{
+        grid-column: 1 / -1;
+        grid-row: 5;
+        text-align: center;
+        padding: 20px;
+    }    
+    .marlo1{
+        grid-column: 1;
+        grid-row: 6;
+        padding: 10px;
+    }
+    
+    .marlo2{
+        grid-column: 2;
+        grid-row: 6;
+        padding: 10px;
+    }
+    
+    .marlo3{
+        grid-column: 3;
+        grid-row: 6;
+        padding: 10px;
+    }
+
+    .dog_container div:nth-child(4n){
+        border: none;
+    }
+}
