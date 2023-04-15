@@ -1,3 +1,12 @@
+.skip a{
+    position: absolute;
+    margin-top: -40px;
+}
+
+.skip a:focus{
+    margin-top: 20px;
+  }
+
 nav li{
     display: inline;
     padding-right: 20px;
@@ -13,6 +22,10 @@ nav{
     padding: 25px 0; 
     text-align: left;
   }
+
+#navigation li a:active{
+    text-decoration: underline;
+}
 
 footer{
     background-color: black;
@@ -148,6 +161,18 @@ img{
     display: none;
 }
 
+.home_img_container .animal_paw2{
+    display: none;
+}
+
+.home_img_container .roxy{
+    display: none;
+}
+
+.home_img_container .tipper{
+    display: none;
+}
+
 
 @media screen and (min-width: 700px){
     nav{
@@ -252,7 +277,14 @@ img{
         flex-direction: row;
         align-content: center;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: stretch;
+    }
+
+    /* .home_img_container .dog_cat{
+        display: none;
+    } */
+    .home_img_container .animal_paw2{
+        display: none;
     }
 } 
 
@@ -351,14 +383,29 @@ img{
         border: none;
     }
    
-    /* .home_img_container {
+    .home_img_container {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         align-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-    } */
+        justify-content: space-around;
+        align-items: stretch;
+    }
 
+    .home_img_container .animal_paw{
+        display: none;
+    }
+
+    .home_img_container .animal_paw2{
+        display: block;
+    }
+
+    .home_img_container .roxy{
+        display: block;
+    }
+    
+    .home_img_container .tipper{
+        display: block;
+    }
 }
 

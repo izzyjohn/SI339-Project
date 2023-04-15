@@ -16,17 +16,53 @@
 				<li class="active"><a href = "index.html" >Home</a></li>
 				<li><a href = "dogs.html">Dogs</a></li>
 				<li><a href = "cats.html">Cats</a></li>
-				<li><a href = "about_us.html">About Us</a></li>
+				<li><a href = "about_us.html">Contact Us</a></li>
 			</ul>
 		</nav>
-        <h1>About Us</h1>
+        <h1>Contact Us</h1>
 	</header>
 	<main>
-		<p> Add Text Here</p>
+		<div class = "hours">
+			<h2>Hours</h2>
+			<h3>Monday - Friday</h3>
+			<p>8am - 5pm</p>
+			<h3>Saturday - Sunday</h3>
+			<p>10am - 4pm</p>
+		</div>
+		<div>
+			<h3>Contact Information</h3>
+			<p>105 S State St, Ann Arbor, MI 48109</p>
+			<p>adoptbff@gmail.com</p>
+			<p>000-111-2222</p>
+		</div>
+		<div class = "map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.9076497924448!2d-83.7427451242837!3d42.28049467120032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae406bf1f7cb%3A0xefd29040373a695a!2sNorth%20Quadrangle%20Residential%20and%20Academic%20Complex!5e0!3m2!1sen!2sus!4v1681587983128!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		
+		<form>
+			<fieldset>
+				<legend>Join our Contact List or Send us a Message!</legend>
+			
+				<label for="name_id">Your Name</label>
+				<input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+			
+				<label for="email_id">Your Email</label>
+				<input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+			
+				<label for="phone_id">Your Phone Number</label>
+				<input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			
+				<label for="msg">Leave A Message</label>
+				<textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+			
+				<input type="submit" value = "Submit">
+			</fieldset>
+		</form>
+
 	</main>
 	<footer>
-		<p>University of Michigan School of Information <br/>
+		<p>Disclaimer: These are our friends pets, they have happy homes already! <br/>
 		  &copy; Izzy Johnson, Zoe Vickery - Web Design 2023</p>
-	  </footer>
+	</footer>
 </body>
 </html>
