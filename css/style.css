@@ -196,10 +196,12 @@ img{
     align-items: center;
 }
 
+/*
 .home_text{
     text-align: center;
     margin-bottom: 15px;
 }
+*/
 
 .home_img_container img{
     width: 300px;
@@ -261,7 +263,6 @@ button {
     height: 50%;
 }
 
-
 .map, iframe {
     grid-column: 2 / -2;
     grid-row: 6 / span 2;
@@ -289,13 +290,36 @@ input {
     box-sizing: border-box;
   }
 
-  textarea{
+textarea{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     box-sizing: border-box;
-  }
+}
+
+.home_background{
+    background-image: url("images/dogs_run.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+
+.home_text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.home_text h2{
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.home_text p{
+    font-size: 84%;
+}
 
 @media screen and (min-width: 700px){
     .dropdown{
@@ -314,9 +338,9 @@ input {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 100%;
         align-items: center;
+        grid-gap: 10px;
     }
     
-    /* do something to nav  */
 
     .brody_text, .lem_charlie_text{
         grid-column: 2;
@@ -613,6 +637,23 @@ input {
         grid-column: 4 / 6;
         grid-row: 1 / 6;
         align-self: center;
+    }
+
+    .home_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    
+    .home_text h2{
+        font-size: 180%;
+    }
+    
+    .home_text p{
+        font-size: 104%;
     }
 
 }
